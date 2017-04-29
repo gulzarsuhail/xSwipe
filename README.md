@@ -93,8 +93,8 @@ Additionally, some gestures are avilable.
       *INTERVAL* is how often synclient monitor changes to the touchpad state.
       Default value is 10(ms).
       Set 50ms as monitoring-span. (e.g.,`$ perl xSwipe.pl -m 50`)
-*   `-n` :
-      Natural scroll like Macbook, use "/nScroll/eventKey.cfg".
+*   `-r` :
+      Reverse scrolling.
 *   `-e` :
       Enable edge-swipe
 
