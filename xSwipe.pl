@@ -18,7 +18,6 @@ my $natural_scroll = 1;
 my $base_dist = 0.1;
 my $polling_interval = 10;
 my $conf_file_name = "eventKey.cfg";
-my $n_scroll_conf_file_name = "nScroll/eventKey.cfg";
 my $edge_swipe = 0;
 
 while(my $ARGV = shift){
@@ -319,7 +318,6 @@ sub init_synclient{
   # &switch_touch_pad("On");
   my $natural_scroll = $_[0];
   if($natural_scroll == 1){
-    $conf_file_name = $n_scroll_conf_file_name;
     `synclient VertScrollDelta=-$vert_scroll_delta HorizScrollDelta=-$horiz_scroll_delta ClickFinger3=1 TapButton3=2`;
   }else{
     `synclient VertScrollDelta=$vert_scroll_delta HorizScrollDelta=$horiz_scroll_delta ClickFinger3=1 TapButton3=2`;
