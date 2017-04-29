@@ -14,7 +14,7 @@ use FindBin;
 #debug
 # use Smart::Comments;
 
-my $natural_scroll = 0;
+my $natural_scroll = 1;
 my $base_dist = 0.1;
 my $polling_interval = 10;
 my $conf_file_name = "eventKey.cfg";
@@ -23,8 +23,8 @@ my $edge_swipe = 0;
 
 while(my $ARGV = shift){
   ### $ARGV
-  if ($ARGV eq '-n'){
-    $natural_scroll = 1;
+  if ($ARGV eq '-r'){
+    $natural_scroll = 0;
   }elsif ($ARGV eq '-d'){
     if ($ARGV[0] > 0){
       $base_dist = $base_dist * $ARGV[0];
