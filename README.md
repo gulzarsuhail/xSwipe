@@ -17,11 +17,11 @@ Before running the script, you must first do some preparations.
   3. Enable SHMConfig
 
 ### 1. Download xSwipe
-Type below code, download xSwipe from github
-
+Type below code, download xSwipe from github for debian
+      
+    $ sudo apt-get install git -y
     $ cd ~
-    $ wget https://github.com/iberianpig/xSwipe/archive/master.zip
-    $ unzip master.zip
+    $ git clone https://github.com/gulzarsuhail/xSwipe
 
 ### 2. Install X11::GUITest
 
@@ -74,7 +74,7 @@ That's it for preparation.
 
 To run xSwipe, type below code on terminal.
 
-    $ perl ~/xSwipe-master/xSwipe.pl
+    $ perl ~/xSwipe/xSwipe.pl
 
 **Note:You should run xSwipe.pl in same directory as "eventKey.cfg" .**
 
