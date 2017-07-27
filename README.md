@@ -3,6 +3,11 @@ xSwipe
 xSwipe is multitouch gesture recognizer.
 This script make your linux PC able to recognize swipes.
 
+## This fork adds
+  - Default natural scrolling
+  - Support for Cinnamon
+  - Less code
+
 ## Usage
 
 Before running the script, you must first do some preparations.
